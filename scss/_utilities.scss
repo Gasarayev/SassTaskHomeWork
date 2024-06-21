@@ -1,0 +1,69 @@
+// border width
+@use "sass:math";
+$utilities: (
+  "border": (
+    "prefix": "border",
+    "values": (
+      "less": none,
+    ),
+  ),
+
+  "border-width": (
+    "prefix": "border",
+    "values": (
+      "1": $base-border-witdh,
+      "2": $base-border-witdh * 2,
+      "3": $base-border-witdh * 3,
+      "4": $base-border-witdh * 4,
+      "5": $base-border-witdh * 5,
+    ),
+  ),
+
+  "border-radius": (
+    "prefix": "rounded",
+    "values": (
+      "0": 0,
+      "1": $base-border-size,
+      "2": $base-border-size * 2,
+      "3": $base-border-size * 3,
+      "4": $base-border-size * 4,
+      "5": $base-border-size * 5,
+      "circle": $base-border-rounded,
+      "pill": calc($base-border-rounded - 50px),
+    ),
+  ),
+
+  "border-color": (
+    "prefix": "border",
+    "values": (
+      "primary": $primary-color,
+      "secondary": $secondary-color,
+      "success": $success-color,
+      "danger": $danger-color,
+      "warning": $warning-color,
+      "info": $info-color,
+      "light": $light-color,
+      "dark": $dark-color,
+    ),
+  ),
+);
+
+@each $property, $items in $utilities {
+  $prefix: map-get(
+    $map: $items,
+    $key: "prefix",
+  );
+  $values: map-get(
+    $map: $items,
+    $key: "values",
+  );
+
+  @each $key, $value in $values {
+    @if ($key == "default") {
+    } @else {
+      .#{$prefix}-#{$key} {
+        #{$property}: $value;
+      }
+    }
+  }
+}

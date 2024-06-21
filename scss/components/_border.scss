@@ -1,0 +1,42 @@
+
+// Border Color
+
+@each $key, $value in $colors {
+  .border-#{$key} {
+    border-color: $value;
+  }
+
+  @if ($value != black and $value != white) {
+    
+    // light version
+
+    @for $i from 1 through 1 {
+      .border-#{$key}-subtle{
+        color: mix(white, $value, $i * 50%);
+      }
+    }
+  }
+}
+
+// Border radius
+
+.rounded-top {
+  border-top-left-radius: $base-border-size;
+  border-top-right-radius: $base-border-size;
+}
+
+.rounded-end {
+  border-bottom-right-radius: $base-border-size;
+  border-top-right-radius: $base-border-size;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: $base-border-size;
+  border-bottom-left-radius: $base-border-size;
+}
+
+.rounded-start {
+  border-top-left-radius: $base-border-size;
+  border-bottom-left-radius: $base-border-size;
+}
+

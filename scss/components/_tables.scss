@@ -1,0 +1,163 @@
+// _tables.scss
+@import "../breakpoints";
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: $dark-color;
+  background-color: $light-color;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid $secondary-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $secondary-color;
+  }
+
+  tbody + tbody {
+    border-top: 2px solid $secondary-color;
+  }
+
+  &.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $light-color;
+  }
+
+  &.table-striped tbody tr:nth-of-type(even) {
+    background-color: $secondary-color;
+  }
+
+  &.table-hover tbody tr:hover {
+    background-color: $secondary-color * 10%;
+  }
+
+  &.table-bordered {
+    border: 1px solid $secondary-color;
+
+    th,
+    td {
+      border: 1px solid $secondary-color;
+    }
+  }
+}
+
+.table-responsive {
+  @include xs {
+    .table {
+      th {
+        padding: $base-padding;
+        font-size: $font-size-xs;
+      }
+
+      td {
+        padding: $base-padding;
+        font-size: $font-size-xs;
+      }
+    }
+
+    .table-dark{
+      background-color: $dark-color;
+      color: white;
+    }
+  }
+  @include sm {
+    .table {
+      background-color: $primary-color;
+
+      th {
+        padding: $base-padding*3;
+        font-size: $font-size-sm;
+      }
+
+      td {
+        padding: $base-padding*3;
+        font-size: $font-size-sm;
+      }
+    }
+  }
+  @include md {
+    .table {
+      background-color: $secondary-color;
+
+      th {
+        padding: $base-padding*4;
+        font-size: $font-size-md;
+      }
+
+      td {
+        padding: $base-padding*4;
+        font-size: $font-size-md;
+      }
+    }
+  }
+  @include lg {
+    .table {
+      background-color: $success-color;
+      th {
+        padding: $base-padding*5;
+        font-size: $font-size-lg;
+      }
+
+      td {
+        padding: $base-padding*5;
+        font-size: $font-size-lg;
+      }
+    }
+  }
+
+  @include xl {
+    .table {
+      background-color: $danger-color;
+
+      th {
+        padding: $base-padding*6;
+      }
+
+      td {
+        padding: $base-padding*6;
+      }
+    }
+  }
+  @include xxl {
+    .table {
+      background-color: $warning-color;
+
+      th {
+        padding: $base-padding*7;
+      }
+
+      td {
+        padding: $base-padding*7;
+      }
+    }
+  }
+
+  @include breakpoint(1500px) {
+    .table {
+      background-color: $warning-color;
+
+      th {
+        padding: $base-padding*8;
+      }
+
+      td {
+        padding: $base-padding*8;
+      }
+    }
+
+    .table thead {
+      background-color: $light-color;
+    }
+  }
+
+  @include breakpoint(1600px) {
+    .table thead {
+      background-color: $info-color;
+    }
+  }
+}

@@ -1,0 +1,353 @@
+.table-primary {
+  background-color: #cfe2ff;
+}
+
+.table-secondary {
+  background-color: #e2e3e5;
+}
+
+.table-success {
+  background-color: #d1e7dd;
+}
+
+.table-danger {
+  background-color: #f8d7da;
+}
+
+.table-warning {
+  background-color: #fff3cd;
+}
+
+.table-info {
+  background-color: #cff4fc;
+}
+
+.table-light {
+  background-color: #f8f9fa;
+}
+
+.table-dark {
+  background-color: #212529;
+}
+
+.border-primary {
+  border-color: #cfe2ff;
+}
+
+.border-primary-subtle {
+  color: #e7f1ff;
+}
+
+.border-secondary {
+  border-color: #e2e3e5;
+}
+
+.border-secondary-subtle {
+  color: #f1f1f2;
+}
+
+.border-success {
+  border-color: #d1e7dd;
+}
+
+.border-success-subtle {
+  color: #e8f3ee;
+}
+
+.border-danger {
+  border-color: #f8d7da;
+}
+
+.border-danger-subtle {
+  color: #fcebed;
+}
+
+.border-warning {
+  border-color: #fff3cd;
+}
+
+.border-warning-subtle {
+  color: #fff9e6;
+}
+
+.border-info {
+  border-color: #cff4fc;
+}
+
+.border-info-subtle {
+  color: #e7fafe;
+}
+
+.border-light {
+  border-color: #f8f9fa;
+}
+
+.border-light-subtle {
+  color: #fcfcfd;
+}
+
+.border-dark {
+  border-color: #212529;
+}
+
+.border-dark-subtle {
+  color: #909294;
+}
+
+.rounded-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rounded-end {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.rounded-start {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.border-less {
+  border: none;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-3 {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-5 {
+  border-width: 5px;
+}
+
+.rounded-0 {
+  border-radius: 0;
+}
+
+.rounded-1 {
+  border-radius: 10px;
+}
+
+.rounded-2 {
+  border-radius: 20px;
+}
+
+.rounded-3 {
+  border-radius: 30px;
+}
+
+.rounded-4 {
+  border-radius: 40px;
+}
+
+.rounded-5 {
+  border-radius: 50px;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-pill {
+  border-radius: calc(50% - 50px);
+}
+
+.border-primary {
+  border-color: #cfe2ff;
+}
+
+.border-secondary {
+  border-color: #e2e3e5;
+}
+
+.border-success {
+  border-color: #d1e7dd;
+}
+
+.border-danger {
+  border-color: #f8d7da;
+}
+
+.border-warning {
+  border-color: #fff3cd;
+}
+
+.border-info {
+  border-color: #cff4fc;
+}
+
+.border-light {
+  border-color: #f8f9fa;
+}
+
+.border-dark {
+  border-color: #212529;
+}
+
+.table-dark {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #212529;
+  color: #f8f9fa;
+  border-collapse: collapse;
+}
+.table-dark th,
+.table-dark td {
+  vertical-align: top;
+  border-top: 1px solid #e2e3e5;
+  background-color: #212529;
+}
+.table-dark tbody td:hover {
+  background-color: #4e5862;
+  border-color: #f8f9fa;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #e2e3e5;
+}
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e2e3e5;
+}
+.table tbody + tbody {
+  border-top: 2px solid #e2e3e5;
+}
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+.table.table-striped tbody tr:nth-of-type(even) {
+  background-color: #e2e3e5;
+}
+.table.table-hover tbody tr:hover {
+  background-color: #e2e3e5;
+}
+.table.table-bordered {
+  border: 1px solid #e2e3e5;
+}
+.table.table-bordered th,
+.table.table-bordered td {
+  border: 1px solid #e2e3e5;
+}
+
+@media (min-width: 0) {
+  .table-responsive .table th {
+    padding: 0.1rem;
+    font-size: 12px;
+  }
+  .table-responsive .table td {
+    padding: 0.1rem;
+    font-size: 12px;
+  }
+  .table-responsive .table-dark {
+    background-color: #212529;
+    color: white;
+  }
+}
+@media (min-width: 576px) {
+  .table-responsive .table {
+    background-color: #cfe2ff;
+  }
+  .table-responsive .table th {
+    padding: 0.3rem;
+    font-size: 14px;
+  }
+  .table-responsive .table td {
+    padding: 0.3rem;
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  .table-responsive .table {
+    background-color: #e2e3e5;
+  }
+  .table-responsive .table th {
+    padding: 0.4rem;
+    font-size: 16px;
+  }
+  .table-responsive .table td {
+    padding: 0.4rem;
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  .table-responsive .table {
+    background-color: #d1e7dd;
+  }
+  .table-responsive .table th {
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+  .table-responsive .table td {
+    padding: 0.5rem;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .table-responsive .table {
+    background-color: #f8d7da;
+  }
+  .table-responsive .table th {
+    padding: 0.6rem;
+  }
+  .table-responsive .table td {
+    padding: 0.6rem;
+  }
+}
+@media (min-width: 1400px) {
+  .table-responsive .table {
+    background-color: #fff3cd;
+  }
+  .table-responsive .table th {
+    padding: 0.7rem;
+  }
+  .table-responsive .table td {
+    padding: 0.7rem;
+  }
+}
+@media (min-width: 1500px) {
+  .table-responsive .table {
+    background-color: #fff3cd;
+  }
+  .table-responsive .table th {
+    padding: 0.8rem;
+  }
+  .table-responsive .table td {
+    padding: 0.8rem;
+  }
+  .table-responsive .table thead {
+    background-color: #f8f9fa;
+  }
+}
+@media (min-width: 1600px) {
+  .table-responsive .table thead {
+    background-color: #cff4fc;
+  }
+}

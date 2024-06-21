@@ -1,0 +1,36 @@
+$primary-color: #cfe2ff;
+$secondary-color: #e2e3e5;
+$success-color: #d1e7dd;
+$danger-color: #f8d7da;
+$warning-color: #fff3cd;
+$info-color: #cff4fc;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+
+$colors: (
+  "primary": $primary-color,
+  "secondary": $secondary-color,
+  "success": $success-color,
+  "danger": $danger-color,
+  "warning": $warning-color,
+  "info": $info-color,
+  "light": $light-color,
+  "dark": $dark-color,
+);
+
+
+// base-border
+
+$base-border-witdh: 1px;
+$base-border-size:10px;
+$base-border-rounded:50%;
+
+// padding
+
+$base-padding: 0.1rem;
+
+//font-size
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
